@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(45, 45, 45);
+}
+
+header {
+    background: local;
+    background-color: rgb(109, 109, 109);
+    background-repeat: no-repeat;
+    padding: 20px;
+    position: relative;
+}
+
+header>ul>li {
+    margin: 0;
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    -webkit-transition: 0.9s;
+}
+
+a:hover {
+    color: rgb(124, 177, 255);
+    -webkit-transition: 0.9s;
+}
+
+#perfil {
+    overflow: hidden;
+    border: 1px solid #000;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100, 83, 255);
+}
+
+h2 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.534);
+}
+
+h3 {
+    margin-left: 1px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100, 83, 255);
+}
+
+p {
+    text-align: justify;
+    color: rgba(240, 248, 255, 0.514);
+    font-size: 18px;
+}
+
+img {
+    margin-left: 1px;
+    width: 30px;
+    height: 30px;
+}
+
+div>ul>li {
+    display: inline;
+    margin: 1 0 0 25px;
+    margin: 10px;
+}
+
+div {
+    text-align: center;
+}
