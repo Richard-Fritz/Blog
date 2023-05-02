@@ -146,8 +146,10 @@ form{
     color: rgb(100, 83, 255);
 }
 input{
+    text-align:center;
     width: 400px;
 }
 textarea{
+    text-align:center;
     width: 940px;
 }
