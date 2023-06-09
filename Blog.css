@@ -103,42 +103,42 @@ footer {
 
 div>#face {
     color: rgb(255, 255, 255);
-    -webkit-transition: 0.9s;
+    transition: 0.9s;
 }
 
 div>#face:hover {
     color: rgb(0, 102, 255);
-    -webkit-transition: 0.9s;
+    transition: 0.9s;
 }
 
 div>#insta {
     color: rgb(255, 255, 255);
-    -webkit-transition: 0.9s;
+    transition: 0.9s;
 }
 
 div>#insta:hover {
     color: rgb(212, 87, 216);
-    -webkit-transition: 0.9s;
+    transition: 0.9s;
 }
 
 div>#what {
     color: rgb(255, 255, 255);
-    -webkit-transition: 0.9s;
+    transition: 0.9s;
 }
 
 div>#what:hover {
     color: rgb(98, 253, 95);
-    -webkit-transition: 0.9s;
+    transition: 0.9s;
 }
 
 div>#link {
     color: rgb(255, 255, 255);
-    -webkit-transition: 0.9s;
+    transition: 0.9s;
 }
 
 div>#link:hover {
     color: rgb(124, 177, 255);
-    -webkit-transition: 0.9s;
+    transition: 0.9s;
 }
 
 form {
