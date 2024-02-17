@@ -4,52 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="Blog.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="contatos.css">
+    <title>Sobre mim</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Sobre mim</a></li>
-                <li><a href="Projetos.html">Projetos</a></li>
-                <li><a href="Contatos.html">Contatos</a></li>
-            </ul>
+            <div class="menus">
+                <div class="sobre">
+                    <a href="index.html">Sobre mim</a>
+                </div>
+                <div class="proj">
+                    <a href="Projetos.html">Projetos</a>
+                </div>
+                <div class="cont">
+                    <a href="Contatos.html">Contatos</a>
+                </div>
+            </div>
         </nav>
     </header>
+    <br><br>
     <div>
         <img id="perfil" src="img/Perfil.jpg">
     </div>
-    <br><br><br>
-    <div id="email">
+    <br><br>
+    <div class="email">
         <form method="post" action="">E-mail: <br>
             <input type="text"><br><br><br>
-            <h3>O que deseja:</h3>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <form method="post" action="">O que deseja:: <br>
+            <textarea name="Escreva aqui" cols="30" rows="10"></textarea>
             <br>
             <button><a href="#">Enviar</a></button>
         </form>
     </div>
     <footer>
-        <div>
-            <h3 id="dados">Redes Sociais</h3>
-            <ul>
+        <h2 id="soc">Redes Sociais</h2>
+        <br>
+        <div class="red">
+            <div class="face">
                 <img src="img/facebook-logo-3-1.png">
-                <li id="Facebook"><a id="face" href="https://www.facebook.com/richard.fritz.336">Facebook</a></li>
+                <a id="face" href="https://www.facebook.com/richard.fritz.336">Facebook</a>
+            </div>
+            <div class="inst">
                 <img src="img/insta.png">
-                <li id="Instagram"><a id="insta"
-                        href="https://www.instagram.com/ri_friitz?igshid=ZDdkNTZiNTM=">Instagram</a>
-                </li>
+                <a id="insta" href="https://www.instagram.com/ri_friitz?igshid=ZDdkNTZiNTM=">Instagram</a>
+            </div>
+            <div class="whats">
                 <img src="img/whatsapp-icone-2.png">
-                <li id="Whatsapp"><a id="what" href="https://wa.me/5511989020906">Whatsapp</a></li>
+                <a id="what" href="https://wa.me/5511989020906">Whatsapp</a>
+            </div>
+            <div class="link">
                 <img src="img/linkedin.png">
-                <li id="Linkedin"><a id="link" href="https://www.linkedin.com/in/richard-fritz-79982b218">Linkedin</a>
-                </li>
-            </ul>
+                <a id="link" href="https://www.linkedin.com/in/richard-fritz-79982b218">Linkedin</a>
+            </div>
         </div>
     </footer>
+
+
 </body>
 
 </html>

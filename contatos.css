@@ -37,36 +37,33 @@ a:hover {
     height: 160px;
 }
 
-h1 {
+.email {
     text-align: center;
-    color: white;
-    font-size: 28px;
-    margin-top: 180px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.pro {
-    display: flex;
-    justify-items: center;
-    justify-content: space-evenly;
+    position: relative;
+    top: 150px;
     width: 100%;
+}
+
+form {
+    color: white;
+    font-size: 20px;
+}
+input{
+    padding: 2px;
+    width: 20%;
+}
+textarea{
+    width: 20%;
+}
+button>a{
+    font-size: 15px;
+    color: black;
+}
+button>a:hover{
+    color: rgb(255, 0, 0);
+}
+#soc {
     text-align: center;
-}
-
-.pro>.bar>a:hover {
-    color: rgb(161, 44, 44);
-}
-
-.pro>.bar>img {
-    width: 400px;
-}
-
-.pro>.dis>a:hover {
-    color: rgb(161, 44, 44);
-}
-
-.pro>.dis>img {
-    width: 400px;
 }
 
 img {
@@ -78,29 +75,25 @@ footer {
     width: 100%;
     background-color: rgb(105, 105, 105);
 }
-
-h2 {
-    text-align: center;
+h2{
+    font-size: 20px;
     color: rgb(184, 184, 184);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .red {
     display: flex;
     justify-content: space-evenly;
 }
-
-.face>a:hover {
-    color: rgb(78, 160, 255);
+.face>a:hover{
+color: rgb(78, 160, 255);
 }
-
-.inst>a:hover {
-    color: rgb(196, 123, 255);
+.inst>a:hover{
+color: rgb(196, 123, 255);
 }
-
-.whats>a:hover {
-    color: rgb(78, 255, 108);
+.whats>a:hover{
+color: rgb(78, 255, 108);
 }
-
-.link>a:hover {
-    color: rgb(78, 190, 255);
+.link>a:hover{
+color: rgb(78, 190, 255);
 }
