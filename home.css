@@ -84,3 +84,15 @@ footer {
     display: flex;
     justify-content: space-evenly;
 }
+.face>a:hover{
+color: rgb(78, 160, 255);
+}
+.inst>a:hover{
+color: rgb(196, 123, 255);
+}
+.whats>a:hover{
+color: rgb(78, 255, 108);
+}
+.link>a:hover{
+color: rgb(78, 190, 255);
+}
