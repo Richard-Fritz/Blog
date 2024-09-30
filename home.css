@@ -74,10 +74,12 @@ p {
 
 footer {
 position: sticky;
+margin-bottom: 0;
     width: 100%;
     background-color: rgb(105, 105, 105);
     text-align: center;
     min-width: 100%;
+    min-height: auto;
 }
 
 
