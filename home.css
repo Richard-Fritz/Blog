@@ -69,12 +69,11 @@ p {
     width: 50%;
     text-indent: 20px;
 }
-.espaco{
-    height: 100%;
-}
+
 
 
 footer {
+position: sticky;
     width: 100%;
     background-color: rgb(105, 105, 105);
     text-align: center;
