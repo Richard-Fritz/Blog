@@ -70,15 +70,12 @@ p {
     text-indent: 20px;
 }
 
-
 footer {
     margin-top: 27%;
     width: 100%;
     background-color: rgb(105, 105, 105);
     text-align: center;
 }
-
-
 
 .red {
     display: flex;
