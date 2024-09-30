@@ -7,11 +7,12 @@ body {
 }
 
 header {
-    background-color: rgb(105, 105, 105);
+    background-color: rgb(75, 75, 75);
     padding: 25px;
 }
 
 .menus {
+    text-align: center;
     display: flex;
     justify-content: space-around;
 }
@@ -20,79 +21,79 @@ a {
     color: white;
     text-decoration: none;
     font-size: 25px;
+    width: 100%;
 }
 
 a:hover {
-    color: rgb(110, 202, 255);
+    color: rgb(0, 29, 190);
+    font-size: 23px;
     transition: 0.9s;
+    text-decoration: underline;
 }
 
 #perfil {
-    position: absolute;
-    left: 46%;
-    right: 50%;
-    border: solid 2px rgb(255, 255, 255);
+    display: block;
+    margin: auto;
+    border: solid 2px rgba(255, 255, 255, 0.507);
     border-radius: 50%;
     width: 160px;
-    height: 160px;
 }
 
 h1 {
-    color: white;
-    font-size: 28px;
-    margin-top: 180px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
 }
 
 h2 {
-    font-size: 20px;
-    color: rgb(184, 184, 184);
+    font-size: 15px;
+    color: rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-#soc {
-    text-align: center;
 }
 
 h3 {
-    color: rgb(185, 184, 255);
+    color: rgb(184, 137, 131);
     font-size: 18px;
+    text-decoration: underline;
+}
+
+li {
+    color: #ffffff;
 }
 
 p {
-    color: white;
+    color: #ffffff;
     text-align: justify;
     width: 50%;
     text-indent: 20px;
 }
-
-li {
-    color: white;
+.espaco{
+    height: 100%;
 }
 
-img {
-    width: 25px;
-}
 
 footer {
-    margin-top: 27%;
+
     width: 100%;
     background-color: rgb(105, 105, 105);
+    text-align: center;
+    min-width: 100%;
 }
+
+
 
 .red {
     display: flex;
     justify-content: space-evenly;
 }
-.face>a:hover{
-color: rgb(78, 160, 255);
+.red>div{
+    display: block;
+    text-align: center;
+    width: 100%;
 }
-.inst>a:hover{
-color: rgb(196, 123, 255);
-}
-.whats>a:hover{
-color: rgb(78, 255, 108);
-}
-.link>a:hover{
-color: rgb(78, 190, 255);
+
+img {
+    width: 30px;
 }
