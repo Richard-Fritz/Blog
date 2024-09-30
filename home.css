@@ -69,9 +69,10 @@ p {
     width: 50%;
     text-indent: 20px;
 }
-
-footer {
+.espaco{
     margin-top: 100%;
+}
+footer {
     width: 100%;
     background-color: rgb(105, 105, 105);
     text-align: center;
