@@ -32,51 +32,40 @@ a:hover {
 }
 
 #perfil {
-    position: absolute;
-    left: 46%;
-    right: 50%;
-    border: solid 2px rgb(255, 255, 255);
+    display: block;
+    margin: auto;
+    border: solid 2px rgba(255, 255, 255, 0.507);
     border-radius: 50%;
     width: 160px;
-    height: 160px;
 }
 
 h1 {
     text-align: center;
-    color: white;
+    color: rgb(255, 102, 0);
     font-size: 28px;
     margin-top: 180px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.pro {
+.projetos {
     display: flex;
     justify-items: center;
     justify-content: space-evenly;
     width: 100%;
     text-align: center;
 }
-
-.pro>.bar>a:hover {
-    color: rgb(161, 44, 44);
+.projetos>div{
+    width: 100%;
 }
-
-.pro>.bar>img {
-    width: 400px;
+.projetos>div>a:hover{
+    color: rgb(255, 136, 0);
 }
-
-.pro>.dis>a:hover {
-    color: rgb(161, 44, 44);
+.projetos>div>img{
+    width: 500px;
 }
-
-.pro>.dis>img {
-    width: 400px;
-}
-
-
 
 footer {
-    margin-top: 13%;
+    margin-top: 5%;
     position: sticky;
     width: 100%;
     background-color: rgb(105, 105, 105);
