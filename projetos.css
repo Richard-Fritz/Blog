@@ -1,9 +1,15 @@
+/* RESET */
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
+    font-family: Arial, sans-serif;
+    padding: 10px;
 }
 
 header {
@@ -11,32 +17,53 @@ header {
     padding: 10px;
 }
 
+/* MENU */
 .menus {
-    text-align: center;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
 }
 
+
+.left {
+    margin-right: auto;
+}
+
+
+.center {
+    margin: 0 auto;
+}
+
+
+.right {
+    margin-left: auto;
+}
+
+.menus a {
+    width: auto; /* remove o 100% */
+    padding: 8px 15px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 8px;
+}
 a {
     color: white;
     text-decoration: none;
-    font-size: 25px;
-    width: 100%;
+    font-size: 20px;
 }
 
-a:hover {
-    color: rgb(0, 29, 190);
-    font-size: 23px;
-    transition: 0.9s;
-    text-decoration: underline;
+.menus a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
 }
 
+/* PERFIL */
 #perfil {
     display: block;
-    margin: auto;
-    border: solid 2px rgba(255, 255, 255, 0.507);
+    margin: 20px auto;
+    border: solid 2px rgba(255, 255, 255, 0.5);
     border-radius: 50%;
-    width: 160px;
+    max-width: 160px;
+    width: 100%;
 }
 
 h1 {
@@ -64,37 +91,43 @@ h1 {
     width: 500px;
 }
 
+/* FOOTER */
 footer {
-    margin-top: 5%;
-    position: sticky;
+    margin-top: 50px;
     width: 100%;
     background-color: rgb(105, 105, 105);
-    text-align: center; 
+    text-align: center;
     color: white;
     font-size: 12px;
+    padding: 10px;
+}
+footer>h2{
+    text-align: center;
+    margin: 5px;
 }
 
+
+/* REDES */
 .red {
     display: flex;
-    justify-content: space-evenly;
-}
-
-.red>div {
-    display: block;
-    text-align: center;
+    justify-content: space-evenly; /* melhor opção */
+    align-items: center;
     width: 100%;
 }
-
-.red>div>a {
-    font-size: 22px;
+/* esquerda */
+.red .left,
+.red .center,
+.red .right {
+    margin: auto;
+}
+.red div {
+    text-align: center;
 }
 
-.red>div>a:hover {
-    transition: 0, 9s;
-    font-size: 15px;
-    text-decoration: underline;
+.red img {
+    display: block;
+    margin: 0 auto 5px;
 }
-
-img {
-    width: 25px;
+.red img {
+    width: 30px;
 }

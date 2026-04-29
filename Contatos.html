@@ -12,9 +12,9 @@
     <header>
         <nav>
             <div class="menus">
-                <a href="index.html">Sobre mim</a>
-                <a href="Projetos.html">Projetos</a>
-                <a href="Contatos.html">Contatos</a>
+                <a class="left" href="index.html">Sobre mim</a>
+                <a class="center" href="Projetos.html">Projetos</a>
+                <a class="right" href="Contatos.html">Contatos</a>
             </div>
         </nav>
     </header>
@@ -24,34 +24,40 @@
     </div>
     <br>
     <div class="email">
-        <form method="post" action="">E-mail: <br>
-            <input type="text"><br>
-            <form method="post" action="">O que deseja:: <br>
-            <textarea name="Escreva aqui" cols="30" rows="10"></textarea>
-            <br>
-            <button><a href="#">Enviar</a></button>
+        <form method="post" action="">
+            <label>E-mail:</label><br>
+            <input type="email" required><br><br>
+
+            <label>O que deseja:</label><br>
+            <textarea cols="30" rows="10" required></textarea><br><br>
+
+            <button type="submit">Enviar</button>
         </form>
     </div>
     <footer>
         <h2>Redes Sociais</h2>
         <div class="red">
-            <div>
+            <div class="left">
                 <img src="img/facebook-logo-3-1.png">
-                <a id="face" href="https://www.facebook.com/richard.fritz.336"><br>Facebook</a>
+                <a href="#">Facebook</a>
             </div>
-            <div>
+
+            <div class="center">
                 <img src="img/insta.png">
-                <a id="insta" href="https://www.instagram.com/ri_friitz?igshid=ZDdkNTZiNTM="><br>Instagram</a>
+                <a href="#">Instagram</a>
             </div>
-            <div>
+
+            <div class="center">
                 <img src="img/whatsapp-icone-2.png">
-                <a id="what" href="https://wa.me/5511989020906"><br>Whatsapp</a>
+                <a href="#">Whatsapp</a>
             </div>
-            <div>
+
+            <div class="right">
                 <img src="img/linkedin.png">
-                <a id="link" href="https://www.linkedin.com/in/richard-fritz-79982b218"><br>Linkedin</a>
+                <a href="#">Linkedin</a>
             </div>
         </div>
+
     </footer>
 
 

@@ -1,56 +1,89 @@
+/* RESET */
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
+    font-family: Arial, sans-serif;
+    padding: 10px;
 }
+
 
 header {
     background-color: rgb(75, 75, 75);
     padding: 10px;
 }
 
+/* MENU */
 .menus {
-    text-align: center;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
 }
 
+
+.left {
+    margin-right: auto;
+}
+
+
+.center {
+    margin: 0 auto;
+}
+
+
+.right {
+    margin-left: auto;
+}
+
+.menus a {
+    width: auto; /* remove o 100% */
+    padding: 8px 15px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 8px;
+}
 a {
     color: white;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
+}
+
+.menus a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+/* PERFIL */
+#perfil {
+    display: block;
+    margin: 20px auto;
+    border: solid 2px rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    max-width: 160px;
     width: 100%;
 }
 
-a:hover {
-    color: rgb(0, 29, 190);
-    font-size: 23px;
-    transition: 0.9s;
-    text-decoration: underline;
+/* TEXTOS */
+h1{
+    text-align: center;
 }
-
-#perfil {
-    display: block;
-    margin: auto;
-    border: solid 2px rgba(255, 255, 255, 0.507);
-    border-radius: 50%;
-    width: 160px;
+ h2, h3 {
+    text-align: left;
 }
 
 h1 {
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 26px;
     text-decoration: underline;
 }
 
 h2 {
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    font-size: 16px;
+    color: white;
 }
 
 h3 {
@@ -59,48 +92,78 @@ h3 {
     text-decoration: underline;
 }
 
-li {
-    color: #ffffff;
+/* LISTAS */
+ul {
+    margin: 10px, 0;
+    list-style: none;
+    text-align: justify;
 }
 
+li {
+    color: white;
+}
+
+/* TEXTO */
 p {
-    color: #ffffff;
+    color: white;
     text-align: justify;
-    width: 50%;
+    max-width: 700px;
+    margin: 5px 0;
     text-indent: 20px;
 }
 
+/* FOOTER */
 footer {
-    margin-top: 10%;
-    position: sticky;
+    margin-top: 50px;
     width: 100%;
     background-color: rgb(105, 105, 105);
     text-align: center;
     color: white;
     font-size: 12px;
+    padding: 10px;
+}
+footer>h2{
+    text-align: center;
+    margin: 5px;
 }
 
+
+/* REDES */
 .red {
     display: flex;
-    justify-content: space-evenly;
-}
-
-.red>div {
-    display: block;
-    text-align: center;
+    justify-content: space-evenly; /* melhor opção */
+    align-items: center;
     width: 100%;
 }
-
-.red>div>a {
-    font-size: 22px;
+/* esquerda */
+.red .left,
+.red .center,
+.red .right {
+    margin: auto;
+}
+.red div {
+    text-align: center;
 }
 
-.red>div>a:hover {
-    transition: 0, 9s;
-    font-size: 15px;
-    text-decoration: underline;
+.red img {
+    display: block;
+    margin: 0 auto 5px;
+}
+.red img {
+    width: 30px;
 }
 
-img {
-    width: 25px;
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+    a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }
