@@ -7,9 +7,11 @@
 
 
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: black;
     font-family: Arial, sans-serif;
-    padding: 10px;
 }
 
 
@@ -114,14 +116,17 @@ p {
 
 /* FOOTER */
 footer {
-    margin-top: 50px;
-    width: 100%;
+    margin-top: auto;
+     margin-top: auto;
+    padding: 20px;
     background-color: rgb(105, 105, 105);
+    width: 100%;
     text-align: center;
     color: white;
     font-size: 12px;
     padding: 10px;
 }
+
 footer>h2{
     text-align: center;
     margin: 5px;
