@@ -1,83 +1,227 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<!gathab>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="home.css">
-        <title>Sobre mim</title>
-    </head>
-
-    <body>
-        <header>
-            <nav>
-                <div class="menus">
-                    <a href="index.html">Sobre mim</a>
-                    <a href="Projetos.html">Projetos</a>
-                    <a href="Contatos.html">Contatos</a>
-                </div>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Richard Fritz Seifert de Lima, estudante de Ciência da Computação no 8º período, em São Paulo.">
+    <meta name="theme-color" content="#f4f0e8">
+    <title>Richard Fritz | Sobre mim</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">RF</span>
+                <span class="brand-name">Richard Fritz</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" id="menu-principal" aria-label="Principal">
+                <a href="index.html" aria-current="page">Sobre mim</a>
+                <a href="Projetos.html">Projetos</a>
+                <a href="Contatos.html">Contato</a>
             </nav>
-        </header>
-        <br>
-        <div>
-            <img id="perfil" src="img/Perfil.jpg">
         </div>
-        <br>
-        <h1>Richard Fritz Seifert de Lima</h1>
-        <br>
-        <h3>Sobre mim:</h3>
-        <ul>
-            <li>Bairro: Recanto Ana Maria São Paulo - SP</li>
-            <li>Número: 11978483986</li>
-            <li>E-mail: richard.ricfritz@gmail.com</li>
-        </ul>
-        <br>
-        <h3>Objetivo:</h3>
-        <p>Busco uma oportunidade na área de tecnologia onde eu possa aplicar meus conhecimentos, desenvolver novas
-            habilidades e contribuir de forma significativa para os objetivos da empresa. Sou comprometido com meu
-            crescimento profissional, tenho facilidade de adaptação a diferentes contextos e estou sempre disposto a me
-            dedicar com empenho para alcançar resultados consistentes e de qualidade. </p>
-        <br>
-        <h3>Formação:</h3>
-        <ul>
-            <li>Ensino Superior - Bacharelado em Ciência da Computação. Atualmente cursando o 7° Período. Universidade
-                Cruzeiro do Sul.</li>
-            <li>Ensino Médio completo</li>
-        </ul>
-        <br>
-        <h3>Cursos:</h3>
-        <ul>
-            <li>Linguagem de Programação Python – Básico </li>
-            <li>Excel Avançado</li>
-            <li>Informatica Basica</li>
-            <li>Designer de Games</li>
-            <li>Multimidia</li>
-            <li>AutoCad</li>
-            <li>Web Designer I & II</li>
-            <li>Linguagem de Programação Python (Básico)</li>
-        </ul>
-        <footer>
-            <h2>Redes Sociais</h2>
-            <div class="red">
-                <div>
-                    <img src="img/facebook-logo-3-1.png">
-                    <a id="face" href="https://www.facebook.com/richard.fritz.336"><br>Facebook</a>
-                </div>
-                <div>
-                    <img src="img/insta.png">
-                    <a id="insta" href="https://www.instagram.com/ri_friitz?igshid=ZDdkNTZiNTM="><br>Instagram</a>
-                </div>
-                <div>
-                    <img src="img/whatsapp-icone-2.png">
-                    <a id="what" href="https://wa.me/5511989020906"><br>Whatsapp</a>
-                </div>
-                <div>
-                    <img src="img/linkedin.png">
-                    <a id="link" href="https://www.linkedin.com/in/richard-fritz325/"><br>Linkedin</a>
-                </div>
-            </div>
-        </footer>
-    </body>
+    </header>
 
+    <main id="conteudo">
+        <div class="container">
+            <section class="hero">
+                <div class="portrait-wrap">
+                    <img class="portrait" src="img/Perfil.jpg" width="640" height="640" alt="Foto de Richard Fritz Seifert de Lima" fetchpriority="high">
+                </div>
+                <div class="hero-copy">
+                    <p class="eyebrow">Portfólio</p>
+                    <h1>Richard Fritz<br>Seifert de Lima</h1>
+                    <p class="role">Ciência da Computação · 8º período</p>
+                    <p class="lede">Estudante da Universidade Cruzeiro do Sul, polo de Santo Amaro, com conclusão prevista para dezembro de 2026. Também atuei como instrutor de informática e desenvolvo interfaces web e mobile.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="Projetos.html">Ver projetos</a>
+                        <a class="button button-secondary" href="Contatos.html">Entrar em contato</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="objetivo-titulo">
+                <p class="eyebrow">Apresentação</p>
+                <h2 id="objetivo-titulo">Objetivo</h2>
+                <blockquote class="objective">
+                    <p>Busco uma oportunidade na área de tecnologia onde eu possa aplicar meus conhecimentos, desenvolver novas habilidades e contribuir de forma significativa para os objetivos da empresa. Sou comprometido com meu crescimento profissional, tenho facilidade de adaptação a diferentes contextos e estou sempre disposto a me dedicar com empenho para alcançar resultados consistentes e de qualidade.</p>
+                </blockquote>
+            </section>
+
+            <div class="split">
+                <section aria-labelledby="formacao-titulo">
+                    <p class="eyebrow">Estudos</p>
+                    <h2 id="formacao-titulo">Formação</h2>
+                    <ol class="timeline">
+                        <li>
+                            <p class="when">Fev/2023 – Dez/2026</p>
+                            <h3>Bacharelado em Ciência da Computação</h3>
+                            <p>Universidade Cruzeiro do Sul · Polo de Santo Amaro · 8º período</p>
+                        </li>
+                        <li>
+                            <p class="when">Fev/2017 – Dez/2019</p>
+                            <h3>Ensino Médio</h3>
+                            <p>E. E. Paulino Nunes Esposo · Concluído</p>
+                        </li>
+                    </ol>
+                </section>
+                <section aria-labelledby="cursos-titulo">
+                    <p class="eyebrow">Complementar</p>
+                    <h2 id="cursos-titulo">Cursos e certificações</h2>
+                    <ul class="cert-list">
+                        <li>
+                            <strong>Python básico</strong>
+                            <span>Fundação Bradesco · 2023</span>
+                        </li>
+                        <li>
+                            <strong>Excel avançado</strong>
+                            <span>Futura Centro de Treinamento Profissional · 2023</span>
+                        </li>
+                        <li>
+                            <strong>Web Design I e II</strong>
+                            <span>HTML, CSS, JavaScript, Photoshop e CorelDRAW · Futura · 2021–2023</span>
+                        </li>
+                        <li>
+                            <strong>Informática</strong>
+                            <span>Windows, Word, Excel e PowerPoint · Futura · 2019</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="section" aria-labelledby="experiencia-titulo">
+                <p class="eyebrow">Trajetória</p>
+                <h2 id="experiencia-titulo">Experiência</h2>
+                <ol class="timeline job-grid">
+                    <li>
+                        <p class="when">Out/2021 – Set/2024</p>
+                        <h3>Instrutor de cursos livres</h3>
+                        <p>Micro Pioneer Comércio e Manutenção de Computadores Ltda.</p>
+                        <ul>
+                            <li>Ministrei aulas de informática, do básico ao avançado, com introdução à programação e web design.</li>
+                            <li>Produzi banners e panfletos no Photoshop e no CorelDRAW.</li>
+                            <li>Fiz manutenção preventiva e corretiva de computadores, com formatação, instalação de softwares e diagnóstico de hardware.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="when">Mar/2021 – Out/2021</p>
+                        <h3>Estagiário — Instrutor de Informática</h3>
+                        <p>Futura Centro de Treinamento Profissional</p>
+                        <ul>
+                            <li>Ministrei cursos básicos e intermediários de informática e programação, com atendimento e suporte aos alunos.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="section" aria-labelledby="competencias-titulo">
+                <p class="eyebrow">O que eu uso</p>
+                <h2 id="competencias-titulo">Competências</h2>
+                <div class="skill-block">
+                    <p class="skill-note">Técnicas</p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>HTML e CSS</li>
+                        <li>Android Studio</li>
+                        <li>SQL</li>
+                        <li>MySQL</li>
+                        <li>Oracle</li>
+                        <li>Git e GitHub</li>
+                        <li>Excel avançado</li>
+                        <li>Photoshop</li>
+                        <li>CorelDRAW</li>
+                        <li>Pacote Office</li>
+                        <li>Windows</li>
+                    </ul>
+                </div>
+                <div class="skill-block">
+                    <p class="skill-note">Comportamentais</p>
+                    <ul class="tags">
+                        <li>Inteligência emocional</li>
+                        <li>Controle sob pressão</li>
+                        <li>Colaboração em equipe</li>
+                        <li>Liderança</li>
+                        <li>Gestão de conflitos</li>
+                        <li>Proatividade</li>
+                        <li>Organização e planejamento</li>
+                        <li>Adaptabilidade</li>
+                        <li>Aprendizado contínuo</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="info-titulo">
+                <p class="eyebrow">Onde me encontrar</p>
+                <h2 id="info-titulo">Informações</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <span>Local</span>
+                        <strong>Zona Sul, São Paulo — SP</strong>
+                    </div>
+                    <a class="info-card" href="tel:+5511978483986">
+                        <span>Telefone</span>
+                        <strong>(11) 97848-3986</strong>
+                    </a>
+                    <a class="info-card" href="mailto:richard.ricfritz@gmail.com">
+                        <span>E-mail</span>
+                        <strong>richard.ricfritz@gmail.com</strong>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-title">Redes sociais</p>
+            <ul class="social-list">
+                <li>
+                    <a class="social-link" href="https://www.facebook.com/richard.fritz.336" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14.5 8.5V6.8c0-.7.5-1.1 1.2-1.1H17V3h-2.1C12.2 3 11 4.5 11 6.7v1.8H9v2.7h2V21h3.1v-9.8h2.1l.4-2.7h-2.5z"/></svg>
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-link" href="https://www.instagram.com/ri_friitz/" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none"/></svg>
+                        <span>Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-link" href="https://wa.me/5511978483986" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M6 18.2 4.2 20.8l.9-3.3A8 8 0 1 1 6 18.2Z" stroke-linejoin="round"/><path d="M9 10.2c.2 1.6 1.8 3.1 3.4 3.5.4.1.8 0 1-.3l.8-.8c.2-.2.5-.2.7 0l1.1.6" stroke-linecap="round"/></svg>
+                        <span>WhatsApp</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-link" href="https://github.com/richard-fritz" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.9 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.5 9.5 0 0 1 5.1 0c2-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7 1 .7 1.9v2.8c0 .3.2.6.7.5 4-1.3 6.9-5.1 6.9-9.6C22 6.6 17.5 2 12 2z"/></svg>
+                        <span>GitHub</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-link" href="https://www.linkedin.com/in/richard-fritz325/" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6.7 9.2H4.2V20h2.5V9.2zM5.4 4C4.5 4 3.8 4.7 3.8 5.6s.7 1.6 1.6 1.6 1.6-.7 1.6-1.6S6.3 4 5.4 4zM20.2 20h-2.5v-5.6c0-1.6-.6-2.6-2-2.6-1 0-1.6.7-1.9 1.4-.1.2-.1.6-.1.9V20H11V9.2h2.4v1.5c.4-.7 1.3-1.8 3.2-1.8 2.3 0 4 1.5 4 4.8V20z"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright">© 2026 Richard Fritz Seifert de Lima · São Paulo, SP</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>

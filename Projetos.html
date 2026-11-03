@@ -1,64 +1,158 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="projetos.css">
-    <title>Projetos</title>
+    <meta name="description" content="Projetos web publicados por Richard Fritz Seifert de Lima.">
+    <meta name="theme-color" content="#f4f0e8">
+    <title>Richard Fritz | Projetos</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="menus">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">RF</span>
+                <span class="brand-name">Richard Fritz</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" id="menu-principal" aria-label="Principal">
                 <a href="index.html">Sobre mim</a>
-                <a href="Projetos.html">Projetos</a>
-                <a href="Contatos.html">Contatos</a>
-            </div>
-        </nav>
+                <a href="Projetos.html" aria-current="page">Projetos</a>
+                <a href="Contatos.html">Contato</a>
+            </nav>
+        </div>
     </header>
-    <br>
-    <div>
-        <img id="perfil" src="img/Perfil.jpg">
-    </div>
-    <br>
-    <h1>Meus Projetos</h1>
-    <br>
-    <div class="projetos">
-        <div>
-            <img src="img/Bar.png"><br>
-            <a href="https://richard-fritz.github.io/Barbearia-da-faculdade/">Barbearia-da-faculdade</a>
-        </div>
-        <div>
-            <img src="img/Disnay.png"><br>
-            <a href="https://richard-fritz.github.io/Richard-Fritz/">Disnay</a>
-        </div>
-    </div>
 
-    <footer>
-        <h2>Redes Sociais</h2>
-        <div class="red">
-            <div>
-                <img src="img/facebook-logo-3-1.png">
-                <a id="face" href="https://www.facebook.com/richard.fritz.336"><br>Facebook</a>
+    <main id="conteudo">
+        <div class="container">
+            <header class="page-hero">
+                <p class="eyebrow">Portfólio</p>
+                <h1>Projetos</h1>
+                <p>Projetos da graduação e páginas que já estão no ar.</p>
+            </header>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <a class="project-media" href="https://richard-fritz.github.io/Barbearia-da-faculdade/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/barbearia-logo.png" alt="Logotipo do projeto Barbearia da Faculdade">
+                        <span class="sr-only">Abrir Barbearia da Faculdade em uma nova aba</span>
+                    </a>
+                    <div class="project-body">
+                        <p class="project-kicker">Landing page</p>
+                        <h2>Barbearia da Faculdade</h2>
+                        <p>Página institucional da Barbearia Cruzeiro, com apresentação dos serviços e convite para agendamento. Projeto da faculdade.</p>
+                        <a class="text-link" href="https://richard-fritz.github.io/Barbearia-da-faculdade/" target="_blank" rel="noopener noreferrer">Abrir projeto <span class="sr-only">(abre em nova aba)</span></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <a class="project-media" href="https://richard-fritz.github.io/Richard-Fritz/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/Disnay.png" alt="Logotipo do projeto Disnay">
+                        <span class="sr-only">Abrir Disnay em uma nova aba</span>
+                    </a>
+                    <div class="project-body">
+                        <p class="project-kicker">Interface web</p>
+                        <h2>Disnay</h2>
+                        <p>Página de apresentação visual publicada no GitHub Pages, com a identidade criada para o projeto.</p>
+                        <a class="text-link" href="https://richard-fritz.github.io/Richard-Fritz/" target="_blank" rel="noopener noreferrer">Abrir projeto <span class="sr-only">(abre em nova aba)</span></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-media project-media--plain project-media--mobile">
+                        <p><span>Fev/2025 – Jun/2025</span>Java · Android</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-kicker">Aplicativo mobile</p>
+                        <h2>Telas de pedido</h2>
+                        <p>Interfaces no Android Studio, com cadastro, lista de compras e resumo de pedidos, pensadas para usabilidade.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-media project-media--plain project-media--service">
+                        <p><span>Ago/2024 – Nov/2024</span>Sistema web</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-kicker">Engenharia de software</p>
+                        <h2>Marido de Aluguel</h2>
+                        <p>Aplicativo para intermediação de serviços domésticos. Atuei no planejamento, na documentação, nas funcionalidades e no apoio ao desenvolvimento, com foco em UX/UI.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-media project-media--plain project-media--code">
+                        <p><span>Ago/2023 – Nov/2023</span>HTML, CSS e JavaScript</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-kicker">Interface web</p>
+                        <h2>Página web responsiva</h2>
+                        <p>Página com interface responsiva, feita em HTML, CSS e JavaScript, incluindo as funcionalidades e as telas.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-media project-media--plain project-media--python">
+                        <p><span>Ago/2023 – Nov/2023</span>Python</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-kicker">Lógica de programação</p>
+                        <h2>Mini sistemas em Python</h2>
+                        <p>Calculadora e outras aplicações simples, para praticar lógica de programação e os conceitos básicos de desenvolvimento.</p>
+                    </div>
+                </article>
             </div>
-            <div>
-                <img src="img/insta.png">
-                <a id="insta" href="https://www.instagram.com/ri_friitz?igshid=ZDdkNTZiNTM="><br>Instagram</a>
-            </div>
-            <div>
-                <img src="img/whatsapp-icone-2.png">
-                <a id="what" href="https://wa.me/5511989020906"><br>Whatsapp</a>
-            </div>
-            <div>
-                <img src="img/linkedin.png">
-                <a id="link" href="https://www.linkedin.com/in/richard-fritz-79982b218"><br>Linkedin</a>
-            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-title">Redes sociais</p>
+            <ul class="social-list">
+                <li>
+                    <a class="social-link" href="https://www.facebook.com/richard.fritz.336" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14.5 8.5V6.8c0-.7.5-1.1 1.2-1.1H17V3h-2.1C12.2 3 11 4.5 11 6.7v1.8H9v2.7h2V21h3.1v-9.8h2.1l.4-2.7h-2.5z"/></svg>
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-link" href="https://www.instagram.com/ri_friitz/" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none"/></svg>
+                        <span>Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-link" href="https://wa.me/5511978483986" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M6 18.2 4.2 20.8l.9-3.3A8 8 0 1 1 6 18.2Z" stroke-linejoin="round"/><path d="M9 10.2c.2 1.6 1.8 3.1 3.4 3.5.4.1.8 0 1-.3l.8-.8c.2-.2.5-.2.7 0l1.1.6" stroke-linecap="round"/></svg>
+                        <span>WhatsApp</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-link" href="https://github.com/richard-fritz" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.9 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.5 9.5 0 0 1 5.1 0c2-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7 1 .7 1.9v2.8c0 .3.2.6.7.5 4-1.3 6.9-5.1 6.9-9.6C22 6.6 17.5 2 12 2z"/></svg>
+                        <span>GitHub</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-link" href="https://www.linkedin.com/in/richard-fritz325/" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6.7 9.2H4.2V20h2.5V9.2zM5.4 4C4.5 4 3.8 4.7 3.8 5.6s.7 1.6 1.6 1.6 1.6-.7 1.6-1.6S6.3 4 5.4 4zM20.2 20h-2.5v-5.6c0-1.6-.6-2.6-2-2.6-1 0-1.6.7-1.9 1.4-.1.2-.1.6-.1.9V20H11V9.2h2.4v1.5c.4-.7 1.3-1.8 3.2-1.8 2.3 0 4 1.5 4 4.8V20z"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright">© 2026 Richard Fritz Seifert de Lima · São Paulo, SP</p>
         </div>
     </footer>
-
-
+    <script src="script.js"></script>
 </body>
-
 </html>
