@@ -1,0 +1,162 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(75, 75, 75);
+    padding: 10px;
+}
+
+/* MENU */
+.menus {
+    display: flex;
+    align-items: center;
+}
+
+
+.left {
+    margin-right: auto;
+}
+
+
+.center {
+    margin: 0 auto;
+}
+
+
+.right {
+    margin-left: auto;
+}
+
+.menus a {
+    width: auto; /* remove o 100% */
+    padding: 8px 15px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 8px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menus a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+/* PERFIL */
+#perfil {
+    display: block;
+    margin: 20px auto;
+    border: solid 2px rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    max-width: 160px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 102, 0);
+    font-size: 28px;
+    margin: 40px 0; /* simples e correto */
+}
+
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+.projetos > div {
+    background-color: #111;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.projetos > div:hover {
+    transform: scale(1.05);
+}
+.projetos img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: auto;
+     margin-top: auto;
+    padding: 20px;
+    background-color: rgb(105, 105, 105);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+
+footer>h2{
+    text-align: center;
+    margin: 5px;
+}
+
+
+/* REDES */
+.red {
+    display: flex;
+    justify-content: space-evenly; /* melhor opção */
+    align-items: center;
+    width: 100%;
+}
+/* esquerda */
+.red .left,
+.red .center,
+.red .right {
+    margin: auto;
+}
+.red div {
+    text-align: center;
+}
+
+.red img {
+    display: block;
+    margin: 0 auto 5px;
+}
+.red img {
+    width: 30px;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+    a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    @media (max-width: 768px) {
+    .projetos {
+        grid-template-columns: 1fr;
+    }
+}
+}
